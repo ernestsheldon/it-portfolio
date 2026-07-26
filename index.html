@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IT Technical Portfolio</title>
+    <style>
+        :root {
+            --primary: #2563eb;
+            --bg: #0f172a;
+            --card-bg: #1e293b;
+            --text-main: #f8fafc;
+            --text-muted: #94a3b8;
+            --accent: #38bdf8;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+            background-color: var(--bg);
+            color: var(--text-main);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1rem;
+        }
+
+        header {
+            text-align: center;
+            padding: 3rem 0;
+            border-bottom: 1px solid var(--card-bg);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            color: var(--text-main);
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+
+        .summary {
+            color: var(--text-muted);
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        section {
+            margin: 3rem 0;
+        }
+
+        h2 {
+            font-size: 1.75rem;
+            color: var(--accent);
+            border-bottom: 2px solid var(--primary);
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1.5rem;
+        }
+
+        .card {
+            background-color: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border: 1px solid #334155;
+        }
+
+        .card h3 {
+            margin-top: 0;
+            color: var(--text-main);
+        }
+
+        .card ul {
+            padding-left: 1.2rem;
+            color: var(--text-muted);
+        }
+
+        .card li {
+            margin-bottom: 0.5rem;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: rgba(37, 99, 235, 0.2);
+            color: var(--accent);
+            padding: 0.2rem 0.6rem;
+            border-radius: 4px;
+            font-size: 0.85rem;
+            margin-right: 0.4rem;
+            margin-bottom: 0.4rem;
+        }
+
+        .contact-btn {
+            display: inline-block;
+            background-color: var(--primary);
+            color: white;
+            padding: 0.75rem 1.5rem;
+            border-radius: 6px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 1rem;
+            transition: background 0.2s;
+        }
+
+        .contact-btn:hover {
+            background-color: #1d4ed8;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            border-top: 1px solid var(--card-bg);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1>IT Help Desk & Network Support</h1>
+            <div class="subtitle">Hands-On Home Lab Experience & System Administration</div>
+            <p class="summary">
+                Detail-oriented IT Support Candidate with practical home lab experience in Active Directory, VMware virtualization, Linux terminal administration, and Wireshark packet analysis. Dedicated to structured, OSI-based troubleshooting and technical customer support.
+            </p>
+            <a href="mailto:your-email@example.com" class="contact-btn">Contact Me</a>
+        </header>
+
+        <section id="skills">
+            <h2>Core Competencies</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Identity & Access Management</h3>
+                    <p>Configured and managed user directory environments inside virtual labs.</p>
+                    <span class="tag">Active Directory</span>
+                    <span class="tag">User Creation</span>
+                    <span class="tag">Password Resets</span>
+                    <span class="tag">OU Structuring</span>
+                    <span class="tag">Basic GPOs</span>
+                </div>
+
+                <div class="card">
+                    <h3>Networking & Diagnostics</h3>
+                    <p>Applied structured OSI model troubleshooting to diagnose connection issues.</p>
+                    <span class="tag">Wireshark</span>
+                    <span class="tag">Cisco Packet Tracer</span>
+                    <span class="tag">OSI Model</span>
+                    <span class="tag">TCP/IP</span>
+                    <span class="tag">Subnetting</span>
+                </div>
+
+                <div class="card">
+                    <h3>Systems & Command Line</h3>
+                    <p>Comfortable managing guest systems and navigating Linux environments via CLI.</p>
+                    <span class="tag">VMware</span>
+                    <span class="tag">Linux Terminal/Bash</span>
+                    <span class="tag">Log Review</span>
+                    <span class="tag">Windows OS</span>
+                    <span class="tag">System Diagnostics</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="labs">
+            <h2>Practical Lab Projects</h2>
+            <div class="card" style="margin-bottom: 1.5rem;">
+                <h3>Active Directory Enterprise Setup (VMware)</h3>
+                <ul>
+                    <li>Deployed a virtual domain controller environment using VMware.</li>
+                    <li>Created organizational units (OUs), populated user accounts, and configured security groups.</li>
+                    <li>Practiced common tier-1 help desk tickets, including account lockouts, password resets, and permission adjustments.</li>
+                </ul>
+            </div>
+
+            <div class="card">
+                <h3>Network Analysis & Linux Troubleshooting</h3>
+                <ul>
+                    <li>Utilized Cisco Packet Tracer to design and test basic network topologies and routing configurations.</li>
+                    <li>Captured and analyzed live network traffic with Wireshark to verify protocol behavior across TCP/IP layers.</li>
+                    <li>Used Linux terminal commands (`netstat`, `ping`, `traceroute`, `journalctl`, `chmod`) to troubleshoot system and connectivity errors.</li>
+                </ul>
+            </div>
+        </section>
+
+        <section id="approach">
+            <h2>Troubleshooting Methodology</h2>
+            <div class="card">
+                <h3>Layered Problem-Solving</h3>
+                <p>When approaching support requests, I systematically isolate problems using a bottom-up OSI approach:</p>
+                <ul>
+                    <li><strong>Physical & Layer 2/3:</strong> Verify physical links, cable integrity, IP assignment, and default gateway connectivity.</li>
+                    <li><strong>System & Access:</strong> Check local service status, review system logs, and verify user account permissions.</li>
+                    <li><strong>Application & User:</strong> Confirm application configs, communicate updates clearly to the end-user, and document resolution steps for team knowledge bases.</li>
+                </ul>
+            </div>
+        </section>
+
+        <footer>
+            <p>&copy; 2026 | Built for IT Help Desk & Technical Support Roles</p>
+        </footer>
+    </div>
+
+</body>
+</html>
